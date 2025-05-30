@@ -1,0 +1,62 @@
+
+
+
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Headphones</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="company">
+            <img src="assets/logo.jpeg" alt="Ecommerce Logo">
+        </div>
+        <button class="nav-toggle">☰</button>
+        <div class="products">
+            <ul>
+                <li><a href="laptop.html">Laptop</a></li>
+                <li><a href="mobile.html">Mobiles</a></li>
+                <li><a href="Aircondition.html">AC</a></li>
+                <li><a href="Television.html">TV</a></li>
+                <li><a href="Camera.html">Camera</a></li>
+                <li><a href="watch.html">Watch</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product-detail">
+        <div class="pro-left">
+            <img src="assets/Arrival/arr-ipod.jpg" alt="Boat Headphones">
+        </div>
+        <div class="pro-right">
+            <h4>Boat Headphones</h4>
+            <ul>
+                <li>Deal Price: ₹44,490.00</li>
+                <li>Offer Price: ₹45,990.00</li>
+                <li>MRP: ₹77,990.00 (Inclusive of all taxes)</li>
+                <li>You Save: 43%(₹33,500)</li>
+                <li>EMIs (Credit Cards) from ₹2136.09/month | View-Plans FREE Shipping!</li>
+            </ul>
+            <div class="pro-button">
+                <button class="addBtn">ADD TO CART</button>
+                <button class="buyBtn">BUY NOW</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 Ecommerce. All rights reserved.</p>
+    </div>
+
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', () => {
+            document.querySelector('.products ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

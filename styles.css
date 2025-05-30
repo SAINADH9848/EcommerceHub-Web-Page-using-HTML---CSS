@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: #1a2a44;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+.company img {
+    height: 50px;
+    width: auto;
+}
+
+.products ul {
+    display: flex;
+    list-style: none;
+}
+
+.products ul li {
+    margin: 0 15px;
+}
+
+.products ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.products ul li a:hover {
+    color: #ff6f61;
+}
+
+/* Hamburger Menu for Mobile */
+.nav-toggle {
+    display: none;
+    font-size: 1.5rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-section {
+    width: 100%;
+    height: 300px;
+    background: url('assets/Banner-1.jpg') center/cover no-repeat;
+}
+
+.category-section, .arrival-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.category-section ul, .arrival-section ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.category-section ul li, .arrival-section ul li {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-section ul li:hover, .arrival-section ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.category-section ul li img, .arrival-section ul li img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.arrival-section ul li span {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.pro-left, .pro-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.pro-left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.pro-right h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.pro-right ul li {
+    list-style: none;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.pro-button {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.addBtn, .buyBtn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.addBtn {
+    background: linear-gradient(45deg, #ff6f61, #ff8a65);
+    color: white;
+}
+
+.buyBtn {
+    background: linear-gradient(45deg, #4caf50, #66bb6a);
+    color: white;
+}
+
+.addBtn:hover, .buyBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #1a2a44;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Login Page Styles */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px - 60px); /* Adjust for navbar and footer */
+    padding: 20px;
+}
+
+.login-form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a2a44;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1a2a44;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: linear-gradient(45deg, #4caf50, #66bb6a);
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.login-form p a {
+    color: #ff6f61;
+}
+
+.login-form p a:hover {
+    color: #e65b50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .products ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1a2a44;
+        padding: 10px 0;
+    }
+
+    .products ul.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+
+    .category-section ul, .arrival-section ul {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .pro-left, .pro-right {
+        flex: 1 1 100%;
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .company img {
+        height: 40px;
+    }
+
+    .pro-right h4 {
+        font-size: 1.2rem;
+    }
+
+    .addBtn, .buyBtn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .login-form h2 {
+        font-size: 1.5rem;
+    }
+}
